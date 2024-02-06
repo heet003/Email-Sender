@@ -1,0 +1,49 @@
+.notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    margin: 1% 36%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    animation: slideOut 0.5s ease-in-out;
+}
+
+.notification.success {
+    background-color: #ffffff;
+    color: #89ff69;
+}
+
+.notification.error {
+    background-color: #ffffff;
+    color: #ff1818;
+}
+
+.line {
+    height: 2px;
+    margin: 1%;
+    width: 0;
+    background-color: #2b2b2b;
+    animation: progress 4s linear forwards;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
